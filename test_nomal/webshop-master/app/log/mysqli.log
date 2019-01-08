@@ -1,0 +1,21 @@
+2018-03-08 17:08:04 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2018-03-08 17:08:08 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2018-03-08 17:08:35 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2018-03-08 17:08:45 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2018-03-08 17:11:29 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2018-03-08 17:11:57 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2018-03-08 17:12:07 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2018-03-08 17:13:34 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2018-03-08 17:18:24 : Unknown column 'token_create_at' in 'field list'
+2018-03-10 11:45:03 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+2018-03-10 11:46:02 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+2018-03-10 11:51:38 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1
+2018-03-14 11:59:58 : Could not connect to database:  / 
+2018-03-14 11:59:58 : Could not connect to database:  / 
+2018-03-14 12:00:07 : Table 'webshop.namlv_url_rewrite' doesn't exist
+2018-03-14 12:00:08 : Table 'webshop.namlv_setup_database' doesn't exist
+2018-05-15 19:19:41 : No database selected
+2018-05-15 19:23:18 : No database selected
+2018-05-15 19:23:24 : No database selected
+2018-06-11 10:07:18 : No database selected
+2018-06-11 10:07:36 : Could not connect to database: a root/123456 a

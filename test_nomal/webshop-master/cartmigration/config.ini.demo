@@ -1,0 +1,6 @@
+version = 1.0.0
+session_name = cartmigration
+dev_mode = true
+demo_mode = true
+migrate_image = true
+migrate_image_des = false

@@ -1,0 +1,245 @@
+<?php
+
+class Bootstrap
+{
+    protected static $_config;
+    protected static $_dbConfig;
+
+    const TABLE_SETTING = 'cartmigration_setting';
+    const TABLE_MAP = 'cartmigration_map';
+    const TABLE_NOTICE = 'cartmigration_notice';
+    const TABLE_RECENT = 'cartmigration_recent';
+
+    public function init()
+    {
+        $this->_includeLib();
+        LECM_Session::init();
+        return $this;
+    }
+
+    public function run()
+    {
+        $controller = isset($_REQUEST['controller']) ? $_REQUEST['controller'] : 'index';
+        $controller = ucfirst($controller);
+        $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : 'index';
+        $class = self::getController($controller);
+        $class->prepareProcess();
+        $class->$action();
+        return ;
+    }
+
+    public static function getView($name = null)
+    {
+        $view_path = _MODULE_APP_DIR_ . DS . 'views' . DS;
+        if(!$name){
+            return $view_path;
+        }
+        return $view_path . $name;
+    }
+
+    public static function getLayout($name = null)
+    {
+        if(!$name){
+            $name = 'default.tpl';
+        }
+        $layout_path = self::getView() . 'layouts' . DS . $name . '.php';
+        return $layout_path;
+    }
+
+    public static function getTemplate($name = null)
+    {
+        if(!$name){
+            return false;
+        }
+        $template_path = self::getView() . 'templates' . DS . $name . '.php';
+        return $template_path;
+    }
+
+    public static function getModel($name = null)
+    {
+        if(!$name){
+            return null;
+        }
+        $model_folder = _MODULE_APP_DIR_ . DS . 'models';
+        $name = self::convertPathUppercase($name);
+        $model_path = str_replace('_', DS, $name);
+        $model_file = $model_folder . DS . $model_path . '.php';
+        if(file_exists($model_file)){
+            require_once $model_file;
+        }
+        $model_name = 'LECM_Model_' . $name;
+        $model = new $model_name();
+        return $model;
+    }
+
+    public static function includeModel($name = null)
+    {
+        if(!$name){
+            return null;
+        }
+        $model_folder = _MODULE_APP_DIR_ . DS . 'models';
+        $name = self::convertPathUppercase($name);
+        $model_path = str_replace('_', DS, $name);
+        $model_file = $model_folder . DS . $model_path . '.php';
+        if(file_exists($model_file)){
+            require_once $model_file;
+        }
+    }
+
+    public static function getController($controller_name)
+    {
+        $controller_name = ucfirst($controller_name);
+        $controller_path = _MODULE_APP_DIR_ . DS . 'controllers' . DS . $controller_name . '.php';
+        if(file_exists($controller_path)){
+            require_once $controller_path;
+            $class_name = 'LECM_Controller_' . $controller_name;
+            $class = new $class_name();
+            return $class;
+        }
+        return null;
+    }
+
+    public static function getUrl($suffix = null, $params = null)
+    {
+        $base_url = LECM_Detected::getBaseUrl();
+        $url = $base_url;
+        if($suffix){
+            $url .= '/' . $suffix;
+        }
+        if($params){
+            if($url == $base_url){
+                $url .= '/';
+            }
+            $url .= '?' . http_build_query($params);
+        }
+        return $url;
+    }
+
+    public static function getConfig($key = null)
+    {
+        if(!static::$_config){
+            $config_path = _MODULE_DIR_ . DS . 'config.ini';
+            static::$_config = parse_ini_file($config_path);
+        }
+        if($key){
+            return isset(static::$_config[$key]) ? static::$_config[$key] : null;
+        }
+        return null;
+    }
+
+    public static function getDbConfig()
+    {
+        if(!static::$_dbConfig){
+            $config_file = _MODULE_APP_DIR_ . DS . 'etc/config.inc.php';
+            static::$_dbConfig = include $config_file;
+        }
+        return static::$_dbConfig;
+    }
+
+    public static function getVersionInstall()
+    {
+        $version_file = _MODULE_APP_DIR_ . DS . 'etc' . DS . 'version';
+        if(!file_exists($version_file)){
+            return '0.0.0';
+        }
+        $version = file_get_contents($version_file);
+        $version = trim($version);
+        return $version;
+    }
+
+    public static function setVersionInstall($version)
+    {
+        $version_file = _MODULE_APP_DIR_ . DS . 'etc' . DS . 'version';
+        @file_put_contents($version_file, $version);
+        return;
+    }
+
+    public static function isSetup()
+    {
+        $version_file = _MODULE_APP_DIR_ . DS . 'etc' . DS . 'version';
+        return file_exists($version_file);
+    }
+
+    public static function isUpgrade()
+    {
+        $isSetup = self::isSetup();
+        if(!$isSetup){
+            return false;
+        }
+        $version_install = self::getVersionInstall();
+        $version_config = self::getConfig('version');
+        return (version_compare($version_install, $version_config) < 0);
+    }
+
+    public static function isConfigDb()
+    {
+        $file_config = _MODULE_APP_DIR_ . DS . 'etc/config.inc.php';
+        return file_exists($file_config);
+    }
+
+    public static function log($msg, $log_type = 'exception')
+    {
+        $log_file = _MODULE_APP_DIR_ . DS . 'log' . DS . $log_type . '.log';
+        if(is_array($msg)){
+            $msg = print_r($msg, true);
+        }
+        $msg .= "\r\n";
+        $date_time = date('Y-m-d H:i:s');
+        @file_put_contents($log_file, $date_time . ' : ' . $msg, FILE_APPEND);
+    }
+
+    public static function logError($msg, $log_type = 'error')
+    {
+        $error_folder = _MODULE_APP_DIR_ . DS . 'log' . DS . 'error';
+        if(!is_dir($error_folder)){
+            mkdir($error_folder);
+        }
+        $log_file = $error_folder . DS . $log_type . '.log';
+        $msg_arr = '';
+        if(is_array($msg)){
+            foreach ($msg as $m){
+                $msg_arr .= $m['query'].";\r\n";
+            }
+            $msg = $msg_arr;
+//            $msg = print_r($msg, true);
+        }
+        $msg .= ";\r\n";
+        @file_put_contents($log_file, $msg, FILE_APPEND);
+    }
+
+    public static function logQuery($msg){
+        print_r($msg);
+        self::log($msg['query'],'query');
+    }
+
+    protected function _includeLib()
+    {
+        $libs = array(
+            'Controller.php',
+            'Detected.php',
+            'Db.php',
+            'Db/Mysql.php',
+            'Db/Mysqli.php',
+			'Db/Sqlite.php',
+			'Db/Pdo/Mysql.php',
+			'Db/Pdo/Sqlite.php',
+            'File.php',
+            'Session.php',
+        );
+        foreach($libs as $lib){
+            $lib_path = _MODULE_APP_DIR_ . DS . 'libs' . DS . $lib;
+            if(file_exists($lib_path)){
+                require_once $lib_path;
+            }
+        }
+        return $this;
+    }
+
+    public static function convertPathUppercase($name, $char = '_')
+    {
+        $split = explode($char, $name);
+        $upper = array_map('ucfirst', $split);
+        $new_name = implode($char, $upper);
+        return $new_name;
+    }
+}

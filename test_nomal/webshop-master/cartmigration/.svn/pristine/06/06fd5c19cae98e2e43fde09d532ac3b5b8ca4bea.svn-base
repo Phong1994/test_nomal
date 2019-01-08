@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Product Construction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Product Construction</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+        <h3>Product Construction</h3>
+        <table class="table-bordered table">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>site_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>language_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>images</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>sku</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>short_description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_title</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_keyword</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>special_price</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>weight</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td>boolean</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>qty</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>tax</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>manufacturer</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>created_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updated_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>categories</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>languages</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>options</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>attributes</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>children</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Special Price Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>start_date</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>end_date</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+    <div>
+        <h3>Product Image Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>label</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>path</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+    <div>
+        <h3>Product Tax Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h3>Product Manufacturer Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Category Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Language Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>short_description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_title</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_keyword</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Option Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>option_id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_code_save</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_languages</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_code_save</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_languages</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>price_prefix</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Option Language Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>option_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Option Value Language Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>option_value_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Attribute Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_languages</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>values</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Attribute Option Language Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>option_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Attribute Value Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_languages</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>price_prefix</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Attribute Value Language Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>option_value_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Children Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>site_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>language_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>images</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>sku</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>short_description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_title</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_keyword</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>special_price</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>weight</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td>boolean</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>qty</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>tax</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>manufacturer</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>created_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updated_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>categories</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>languages</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>options</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Children Special Price Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>start_date</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>end_date</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Children Tax Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h3>Product Children Manufacturer Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Children Category Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Children Language Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>short_description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_title</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_keyword</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>meta_description</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product Children Option Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>option_id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_code_save</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_languages</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_code_save</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_languages</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>price_prefix</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Product JSON Construction</h3>
+<pre>
+    {
+        "id" : 1,
+        "code": null,
+        "site_id": 1,
+        "language_id": 1,
+        "image": {
+            "label": "",
+            "path": "1.jpg"
+        },
+        "images": [
+            {
+                "label": "",
+                "path": "2.jpg"
+            },
+            {
+                "label": "",
+                "path": "3.jpg"
+            }
+        ],
+        "name": "Product One",
+        "sku": "",
+        "description": "",
+        "short_description": "",
+        "meta_title": "",
+        "meta_keyword": "",
+        "meta_description": "",
+        "price": "10.00",
+        "special_price": {
+            "price": "9.00",
+            "start_date": "2000-10-10 00:00:00",
+            "end_date": null
+        },
+        "weight": "1.0",
+        "status": true,
+        "qty": 100,
+        "tax": {
+            "id": 1,
+            "code": null
+        },
+        "manufacturer":{
+            "id": 1,
+            "code": null
+        },
+        "created_at": "2000-10-10 00:00:00",
+        "update_at": "2000-10-10 00:00:00",
+        "categories": [
+            {
+                "id": 1,
+                "code": null
+            },
+            {
+                "id": 2,
+                "code": null
+            }
+        ],
+        "languages": [
+            {
+                "name": "Product One",
+                "description": "",
+                "short_description": "",
+                "meta_title": "",
+                "meta_keyword": "",
+                "meta_description": ""
+            }
+        ],
+        "options": [
+            {
+                "option_id": 1,
+                "option_code_save": null,
+                "option_code": "color",
+                "option_name": "Color",
+                "option_languages": [
+                    {
+                        "option_name": "Color"
+                    },
+                    {
+                        "option_name": "MÃ u sáº¯c"
+                    }
+                ],
+                "option_value_id": 1,
+                "option_value_code_save": null,
+                "option_value_code": "white",
+                "option_value_name": "White",
+                "option_value_languages": [
+                    {
+                        "option_value_name": "White",
+                    },
+                    {
+                        "option_value_name": "Tráº¯ng",
+                    }
+                ],
+                "price": "0.00",
+                "price_prefix": "+"
+            }
+        ],
+        "attributes": [
+            {
+                "id": 2,
+                "code": null,
+                "option_code": "size",
+                "option_name": "Size",
+                "option_languages": [
+                    {
+                        "option_name": "Size",
+                    },
+                    {
+                        "option_name": "Cá»¡",
+                    }
+                ],
+                "values": [
+                    {
+                        "id": 1,
+                        "code": null,
+                        "option_value_code": "m",
+                        "option_value_name": "M",
+                        "option_value_languages": [
+                            {
+                                "option_value_name": "M",
+                            },
+                            {
+                                "option_value_name": "M",
+                            },
+                        ],
+                        "price": "0.00",
+                        "price_prefix": "+"
+                    }
+                ]
+            }
+        ],
+        "children": [
+            {
+                "id" : 1,
+                "code": null,
+                "site_id": 1,
+                "language_id": 1,
+                "image": {},
+                "images": {},
+                "name": "Product Children One",
+                "sku": "",
+                "description": "",
+                "short_description": "",
+                "meta_title": "",
+                "meta_keyword": "",
+                "meta_description": "",
+                "price": "10.00",
+                "special_price": {
+                    "price": "9.00",
+                    "start_date": "2000-10-10 00:00:00",
+                    "end_date": null
+                },
+                "weight": "1.0",
+                "status": true,
+                "qty": 100,
+                "tax": {
+                    "id": 1,
+                    "code": null
+                },
+                "created_at": "2000-10-10 00:00:00",
+                "update_at": "2000-10-10 00:00:00",
+                "categories": [
+                    {
+                        "id": 1,
+                        "code": null
+                    }
+                ],
+                "languages": [
+                    {
+                        "name": "Product Children One",
+                        "description": "",
+                        "short_description": "",
+                        "meta_title": "",
+                        "meta_keyword": "",
+                        "meta_description": ""
+                    }
+                ],
+                "options": [
+                    {
+                        "option_id": 1,
+                        "option_code_save": null,
+                        "option_code": "size",
+                        "option_name": "Size",
+                        "option_languages": [
+                            {
+                                "option_name": "Size"
+                            },
+                            {
+                                "option_name": "Kích cỡ"
+                            }
+                        ],
+                        "option_value_id": 1,
+                        "option_value_code_save": null,
+                        "option_value_code": "m",
+                        "option_value_name": "M",
+                        "option_value_languages": [
+                            {
+                                "option_value_name": "M",
+                            },
+                            {
+                                "option_value_name": "M",
+                            }
+                        ],
+                        "price": "0.00",
+                        "price_prefix": "+"
+                    }
+                ]
+            }
+        ]
+    }
+</pre>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>

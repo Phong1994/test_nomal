@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Order Construction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Order Construction</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+        <h3>Order Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>site_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>language_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>tax</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>coupon</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>discount</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>shipping</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>subtotal</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>currency</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>created_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updated_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>customer</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>billing_address</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>shipping_address</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>payment</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>items</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>histories</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order Customer Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>site_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>language_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>first_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>middle_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>last_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order Address Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>site_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>language_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>first_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>middle_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>last_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>address_1</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>address_2</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>city</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>country</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>state</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>postcode</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>telephone</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>company</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>fax</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order Address Country Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>country_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order Address State Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>state_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order Payment Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>site_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>language_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>method</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order Item Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>site_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>language_id</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>product</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>qty</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>original_price</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>tax_amount</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>tax_percent</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>discount_amount</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>discount_percent</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>subtotal</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>float</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option</td>
+                <td>array</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>created_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updated_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order Item Product Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>sku</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order Item Option Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>option_id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_code_save</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_code_save</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_code</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>option_value_name</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order History Construction</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th class="col-md-2">Name</th>
+                <th class="col-md-1">Type</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>int</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td>NA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>comment</td>
+                <td>string</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>notified</td>
+                <td>boolean</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>created_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>updated_at</td>
+                <td>datetime</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+    <div>
+        <h3>Order JSON Construction</h3>
+<pre>
+    {
+        "id" : 1,
+        "code": null,
+        "site_id": 1,
+        "language_id": 1,
+        "status": 2,
+        "tax": "0.00",
+        "coupon": "0.00",
+        "discount": "0.00",
+        "shipping": "0.00",
+        "subtotal": "10.00",
+        "total": "10.00",
+        "currency": "USD",
+        "created_at": "2000-10-10 00:00:00",
+        "update_at": "2000-10-10 00:00:00",
+        "customer": {
+            "id": 1,
+            "code": null,
+            "site": 1,
+            "language": 1,
+            "username": "admin",
+            "email": "user@gmail.com",
+            "first_name": "Demo",
+            "middle_name": "",
+            "last_name": "User"
+        },
+        "billing_address": {
+            "id": 1,
+            "code": null,
+            "site": 1,
+            "language": 1,
+            "first_name": "Demo",
+            "middle_name": "",
+            "last_name": "User",
+            "address_1": "",
+            "address_2": "",
+            "city": "",
+            "country": {
+                "id": 1,
+                "code": null,
+                "country_code": "VN",
+                "name": "Vietnamese"
+            },
+            "state": {
+                "id": 1,
+                "code": null,
+                "name": "Ha Noi",
+                "state_code": "HN
+            },
+            "postcode": "100000",
+            "telephone": "8499999999",
+            "company": "NA",
+            "fax": "1234567",
+            "default": {
+                "billing": false,
+                "shipping": false
+            },
+            "created_at": "2000-10-10 00:00:00",
+            "update_at": "2000-10-10 00:00:00"
+        },
+        "shipping_address": {
+            "id": 1,
+            "code": null,
+            "site": 1,
+            "language": 1,
+            "first_name": "Demo",
+            "middle_name": "",
+            "last_name": "User",
+            "address_1": "",
+            "address_2": "",
+            "city": "",
+            "country": {
+                "id": 1,
+                "code": null,
+                "country_code": "VN",
+                "name": "Vietnamese"
+            },
+            "state": {
+                "id": 1,
+                "code": null,
+                "name": "Ha Noi",
+                "state_code": "HN
+            },
+            "postcode": "100000",
+            "telephone": "8499999999",
+            "company": "NA",
+            "fax": "1234567",
+            "default": {
+                "billing": false,
+                "shipping": false
+            },
+            "created_at": "2000-10-10 00:00:00",
+            "update_at": "2000-10-10 00:00:00"
+        },
+        "payment": {
+            "id": null,
+            "code": null,
+            "site": 1,
+            "language": 1,
+            "method": "bank",
+            "title": "Banking"
+        },
+        "items": [
+            {
+                "id": 1,
+                "code": null,
+                "site": 1,
+                "language": 1,
+                "product": {
+                    "id" => 1,
+                    "code" => null,
+                    'name' => 'Product One',
+                    'sku' => 'pro-one',
+                },
+                "qty": 10,
+                "price": "10.0",
+                "original_price": "10.0",
+                "tax_amount": "0.00",
+                "tax_percent": "0.00",
+                "discount_amount": "0.00",
+                "discount_percent": "0.00",
+                "subtotal": "100.00",
+                "total": "100.00",
+                "option": [
+                    {
+                        'option_id' => 1,
+                        'option_code_save' => null,
+                        'option_code' => 'color',
+                        'option_name' => 'Color',
+                        'option_value_id' => 1,
+                        'option_value_code_save' => null,
+                        'option_value_code' => 'white',
+                        'option_value_name' => 'White'
+                    }
+                ],
+                "created_at": "2000-10-10 00:00:00",
+                "update_at": "2000-10-10 00:00:00"
+            }
+        ],
+        "histories": [
+            {
+                'id' => 1,
+                'code' => null,
+                'status' => 3,
+                'comment' => 'This is comment',
+                'notified' => false,
+                "created_at": "2000-10-10 00:00:00",
+                "update_at": "2000-10-10 00:00:00"
+            }
+        ]
+    }
+</pre>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>

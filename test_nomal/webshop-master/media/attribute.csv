@@ -1,0 +1,7 @@
+code,label,type,input,is_core,is_show_grid,is_required,is_unique,default_value
+price,Price,decimal,text,1,1,1,0,
+sale_price,Sales Price,decimal,text,1,0,0,0,
+sale_type,Type,int,select,1,0,0,0,
+sale_from,Sales From,datetime,datetime,1,0,0,0,
+sale_to,Sales To,datetime,datetime,1,0,0,0,
+weight,Weigth,decimal,text,1,0,0,0,

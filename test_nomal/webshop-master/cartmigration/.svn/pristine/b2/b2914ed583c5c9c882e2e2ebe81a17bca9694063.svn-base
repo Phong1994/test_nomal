@@ -1,0 +1,24 @@
+<?php
+class LECM_Model_Type
+{
+    public function sourceCarts()
+    {
+        $carts = array(
+            
+            'magento' => 'Magento',
+
+        );
+        ksort($carts);
+        return $carts;
+    }
+
+    public function targetCarts()
+    {
+        $carts = array(
+            'magento' => 'Magento',
+
+        );
+        ksort($carts);
+        return $carts;
+    }
+}

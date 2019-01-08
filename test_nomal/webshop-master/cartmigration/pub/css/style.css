@@ -1,0 +1,559 @@
+body {
+    margin-top: 60px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-left: 20px;
+}
+
+a, a:hover, a:visited, a:active, a:link {
+    text-decoration: none;
+}
+
+.panel {
+    box-shadow: none !important;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.page-header {
+    margin: 0 !important;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.display-none {
+    display: none;
+}
+
+#source-file-info .upload-row-odd {
+    background: #F2F2F2;
+    margin: 0;
+    padding: 8px 0;
+}
+
+#source-file-info .upload-row-even {
+    margin: 0;
+    padding: 8px 0;
+    /*background: #FFF;*/
+
+}
+
+#menu-content {
+    margin: 10px auto;
+    width: 630px;
+}
+
+#menu-content .menu-step {
+    position: relative;
+    float: left;
+    width: 200px;
+    text-align: center;
+    border-left: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+    border-top: 4px solid #CECECE;
+    border-bottom: 1px solid #CECECE;
+    padding: 10px 0px 10px 0px;
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #F2F2F2;
+    color: #ADADAD;
+    bottom: -1px;
+}
+
+.panel-body {
+    padding: 0 !important;
+}
+
+#menu-content .menu-step.menu-active {
+    position: relative;
+    bottom: -1px;
+    border-bottom: 1px solid #FFFFFF;
+    border-left: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+    border-top: 4px solid #EB5202;
+    color: #666666;
+    font-size: 1.2em;
+    background-color: transparent;
+}
+.migration-padding{
+    padding:0px 30px;
+}
+.form-upload{
+    margin-left: 20px;
+}
+#migration-content {
+    border: 1px solid #DFDFDF;
+    /*padding: 20px;*/
+}
+.panel.source h3,.panel.target h3 {
+    margin-left: 30px;
+}
+
+#resume-content {
+    background: #FFECCC;
+    padding:0px 20px;
+}
+
+#resume-content .panel {
+    background: none;
+}
+
+.uir-warning {
+    background: url("../img/warning.png") no-repeat left center;
+    padding-left: 20px;
+}
+
+.uir-success {
+    background: url("../img/success.png") no-repeat left center;
+    padding-left: 20px;
+}
+
+.form-loading {
+    display: none;
+}
+
+.form-submit {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-submit {
+    background-color: #eb5202;
+    border-color: #eb5202;
+    color: #ffffff;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    min-width: 120px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    border-radius: 3px;
+}
+
+.btn-submit:hover {
+    background-color: #3DA25D;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-submit:visited, .btn-submit:active, .btn-submit:link {
+    color: #ffffff;
+}
+
+.console-wrap {
+    margin-top: 20px;
+}
+
+.console-wrap .console-log {
+    width: 100%;
+    height: 200px;
+    background: #000000;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 12px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.console-wrap .console-log .error {
+    color: #ff0000;
+    font-size: 12px
+}
+
+.console-wrap .console-log .success {
+    color: #008000;
+    font-size: 12px
+}
+
+.console-wrap .console-log .warning {
+    color: #ffff00;
+    font-size: 12px
+}
+
+.entity-label {
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.process-wrap {
+    width: 100%;
+}
+
+.process-wrap .process-name {
+    width: 15%;
+    float: left;
+    line-height: 30px;
+}
+
+.process-wrap .process-content {
+    width: 80%;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.process-wrap .process-bar {
+    float: left;
+    width: 300px;
+}
+
+.process-wrap .console-log {
+    margin-top: 5px;
+    float: left;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+.process-wrap .process-bar .process-bar-point {
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    display: none;
+    z-index: 100;
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.process-wrap .try-import {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    display: none;
+}
+
+.process-wrap .try-import > div {
+    width: 200px;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 220px;
+    color: white;
+    border-radius: 6px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(223, 117, 20);
+    cursor: pointer;
+}
+
+.process-wrap .process-bar {
+    text-align: center;
+    width: 300px;
+    border: 1px solid #999;
+    padding: 1px;
+    height: 8px;
+    margin: 10px auto;
+}
+
+.process-wrap .process-bar > .process-bar-width {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #6188F5;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    /*background-size*/
+    -webkit-background-size: 16px 8px;
+    -moz-background-size: 16px 8px;
+    -o-background-size: 16px 8px;
+    background-size: 16px 8px;
+    background-image: -webkit-linear-gradient(315deg, transparent, transparent 33%, rgba(0, 0, 0, 0.12) 33%, rgba(0, 0, 0, 0.12) 66%, transparent 66%, transparent);
+    background-image: -moz-linear-gradient(315deg, transparent, transparent 33%, rgba(0, 0, 0, 0.12) 33%, rgba(0, 0, 0, 0.12) 66%, transparent 66%, transparent);
+    background-image: -o-linear-gradient(315deg, transparent, transparent 33%, rgba(0, 0, 0, 0.12) 33%, rgba(0, 0, 0, 0.12) 66%, transparent 66%, transparent);
+    background-image: linear-gradient(315deg, transparent, transparent 33%, rgba(0, 0, 0, 0.12) 33%, rgba(0, 0, 0, 0.12) 66%, transparent 66%, transparent);
+    /*animation*/
+    -webkit-animation: load 5s linear 0 infinite;
+    -moz-animation: load 5s linear 0 infinite;
+    -ms-animation: load 5s linear 0 infinite;
+    -o-animation: load 5s linear 0 infinite;
+    animation: load 5s linear 0 infinite;
+}
+
+label.error {
+    color: #ff0000;
+    background: url("../img/arrow_valid.gif") no-repeat center left;
+    padding-left: 10px;
+}
+
+.import-warning {
+    color: #008000;
+    margin-top: 10px;
+}
+.storage-warning {
+    margin-top: 10px;
+}
+.message-alert-success {
+    color: #008000;
+}
+
+.message-alert-error {
+    color: #ff0000;
+}
+
+.message-alert-warning {
+    color: #ffff00;
+}
+
+.guide-section {
+    /*background: #F7FFF7;*/
+    /*border: 1px solid #7EBB7E;*/
+    /*padding: 20px;*/
+    /*margin: 0 15px 20px;*/
+}
+
+.form-title {
+    font-weight: bold;
+}
+
+.warning-section {
+    background: #ffddab;
+    border: 1px solid #FF9800;
+    padding: 20px;
+    margin: 0 30px 0 30px;
+}
+
+.logo {
+    background: url("../img/logo.png") no-repeat center;
+    width: 140px;
+    height: 20px;
+    display: block;
+}
+
+/*.panel h3 {*/
+/*margin: 0 15px;*/
+/*}*/
+
+/*process*/
+.progress_new {
+    margin-top: 0px !important;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    background: #FFF !important;
+    padding: 10px;
+}
+
+.progress_new .circle,
+.progress_new .bar {
+    display: inline-block;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #d5d5da;
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+.progress_new .bar {
+    position: relative;
+    width: 80px;
+    height: 6px;
+    top: -33px;
+    margin-left: -5px;
+    margin-right: -5px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.progress_new .circle .label {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
+    border-radius: 32px;
+    margin-top: 3px;
+    color: #b5b5ba;
+    font-size: 17px;
+}
+
+.progress_new .circle .title {
+    color: #b5b5ba;
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: -5px;
+}
+
+/* Done / Active */
+.progress_new .bar.done,
+.progress_new .circle.done {
+    background: #D8D8D8;
+}
+
+.progress_new .bar.active {
+    background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+}
+
+.progress_new .circle.done .label {
+    color: #FFF;
+    background: #8bc435;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.progress_new .circle.done .title {
+    color: #444;
+}
+
+.progress_new .circle.active .label {
+    color: #FFF;
+    background: #0c95be;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.progress_new .circle.active .title {
+    color: #0c95be;
+}
+
+.display-block {
+    display: block;
+}
+
+#circle-setup {
+    margin-left: 0px;
+}
+
+#circle-config {
+    margin-left: -18px;
+}
+
+#circle-mig {
+    margin-left: -7px;
+}
+
+#parent_support {
+    position: relative;
+}
+
+#icon_support {
+    width: 50px;
+    height: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+#parent_banner {
+    text-align: center !important;
+}
+
+#banner_support {
+    text-align: center;
+    font-size: large;
+}
+
+.red {
+    color: red !important;
+}
+
+#support {
+    position: fixed;
+    border: 1px solid #CECECE;
+    /*max-height: 450px;*/
+    /*overflow-y: auto;*/
+    word-wrap: break-word;
+}
+
+#support_header {
+    border-bottom: 1px solid #CECECE;
+    margin: 0 !important;
+    width: 100%;
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.source {
+    background-color: #F1F1F1;
+    padding-left: 10px !important;
+    padding-bottom: 5px !important;
+}
+
+.target {
+    background-color: #FAFAFA;
+    padding-left: 10px !important;
+    padding-bottom: 5px !important;
+}
+
+.center {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.title_support {
+    margin-top: 5px;
+    /*margin-left: 5px;*/
+    font-weight: bold;
+}
+
+#pagination {
+    margin-bottom: 5px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+#pagination li {
+    padding-left: 0 !important;
+}
+
+#footer_support {
+    width: 100%;
+    text-align: center;
+}
+
+#support_content {
+    margin: 20px;
+}
+
+#support_content ul li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+/*new*/
+#resume-content .migration-padding{
+    padding-bottom: 0px !important;
+}
+#support_content li{
+    padding-left: 0px !important;
+}
+#form-storage .console-wrap{
+    margin-top: 10px !important;
+}
+#support_content ol{
+    padding-left: 15px;
+    margin-left: 0px;
+}
+#setup-content .form-submit{
+}
