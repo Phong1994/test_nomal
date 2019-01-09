@@ -55,14 +55,14 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newspage/admin/includes/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="498">
+              <caret line="44" column="2" lean-forward="true" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
               <folding>
-                <marker date="1546574765517" expanded="true" signature="585:761" ph="..." />
-                <marker date="1546574765517" expanded="true" signature="627:718" ph="..." />
-                <marker date="1546574765517" expanded="true" signature="905:1222" ph="..." />
-                <marker date="1546574765517" expanded="true" signature="951:1175" ph="..." />
-                <marker date="1546574765517" expanded="true" signature="999:1126" ph="..." />
+                <marker date="1547030544579" expanded="true" signature="585:761" ph="..." />
+                <marker date="1547030544579" expanded="true" signature="627:718" ph="..." />
+                <marker date="1547030544579" expanded="true" signature="905:1250" ph="..." />
+                <marker date="1547030544579" expanded="true" signature="951:1175" ph="..." />
+                <marker date="1547030544579" expanded="true" signature="999:1126" ph="..." />
               </folding>
             </state>
           </provider>
@@ -147,10 +147,10 @@
         <option value="$PROJECT_DIR$/newspage/admin/core/init.php" />
         <option value="$PROJECT_DIR$/newspage/admin/classes/session.php" />
         <option value="$PROJECT_DIR$/newspage/admin/classes/DB.php" />
-        <option value="$PROJECT_DIR$/newspage/admin/includes/header.php" />
         <option value="$PROJECT_DIR$/newspage/admin/includes/footer.php" />
         <option value="$PROJECT_DIR$/newspage/admin/templates/signin.php" />
         <option value="$PROJECT_DIR$/newspage/admin/index.php" />
+        <option value="$PROJECT_DIR$/newspage/admin/includes/header.php" />
       </list>
     </option>
   </component>
@@ -186,6 +186,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,14 +237,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="$path&#9;null&#9;null&#10;power&#9;ACTION&#9;TogglePowerSave&#10;pluggin&#9;null&#9;null" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -357,11 +357,12 @@
       <workItem from="1546571113373" duration="4526000" />
       <workItem from="1546828214427" duration="1477000" />
       <workItem from="1546938855167" duration="1566000" />
+      <workItem from="1547029113697" duration="631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126344000" />
+    <option name="totallyTimeSpent" value="126975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -371,12 +372,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -727,14 +728,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newspage/admin/includes/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="498">
+          <caret line="44" column="2" lean-forward="true" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
           <folding>
-            <marker date="1546574765517" expanded="true" signature="585:761" ph="..." />
-            <marker date="1546574765517" expanded="true" signature="627:718" ph="..." />
-            <marker date="1546574765517" expanded="true" signature="905:1222" ph="..." />
-            <marker date="1546574765517" expanded="true" signature="951:1175" ph="..." />
-            <marker date="1546574765517" expanded="true" signature="999:1126" ph="..." />
+            <marker date="1547030544579" expanded="true" signature="585:761" ph="..." />
+            <marker date="1547030544579" expanded="true" signature="627:718" ph="..." />
+            <marker date="1547030544579" expanded="true" signature="905:1250" ph="..." />
+            <marker date="1547030544579" expanded="true" signature="951:1175" ph="..." />
+            <marker date="1547030544579" expanded="true" signature="999:1126" ph="..." />
           </folding>
         </state>
       </provider>

@@ -37,6 +37,7 @@ else
                         <a class="navbar-brand" href="' . $_DOMAIN . '">Newspage Administration</a>
                     </div><!-- div.navbar-header -->
                 </div><!-- div.container-fluid -->
+                <div></div>
             </nav>
         ';
 }
